@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navegação de Iframes</title>
+    <style>
+        
+        iframe { 
+            border: 1px solid black;
+
+        }
+        ul { 
+            list-style: none;
+            display: flex;
+            justify-content: left;
+            gap: 30px;
+            margin:3vh;
+        }
+        
+        li a {
+            border: 1px solid black;
+            padding: 12px;
+            border-radius: 10px;
+            background-color: rgb(255, 255, 255);   
+            text-decoration: none;
+            color:black; 
+        }
+
+        li a:hover { 
+            background-color: lightgray;
+            transition-duration: 0.5s;
+
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Navegando nos iframes</h1>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt eveniet repudiandae quia aperiam fugit, animi aut provident eaque cupiditate maiores unde. Facere, nemo! Dignissimos ipsum dolores illo cupiditate exercitationem sequi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati similique harum neque quasi dolore eligendi laudantium nobis officia distinctio voluptatum, maiores quas consequatur totam accusamus quo aut commodi voluptates quam?</p>
+
+    <ul>
+        <li><a href="../modulo3/ex023/tabela006.html" target="frame">Primeiro video</a></li>
+        <li><a href="https://www.youtube.com/embed/vJ5YfODI284?si=EzaOiKbynypyvToI" target="frame">Segundo video</a></li>
+        <li><a href="https://www.youtube.com/embed/6FPX-ZZYoH0?si=JSbFmFHPWQByCd1a" target="frame">Terceiro video</a></li>
+    </ul>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia eos saepe quis modi corrupti, incidunt doloribus facilis voluptatum distinctio itaque consequuntur, repudiandae qui tenetur maiores impedit vitae ipsam illo aspernatur?</p>
+
+    <iframe width="600px" height="300px" srcdoc="<h1> Testando o src doc</h1> <br> <p> akskaskodkaoksodkoaosd" name="frame" frameborder="0">
+
+
+        <p>Site não compativel</p>
+    </iframe>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam deserunt repellendus quod similique autem ea excepturi quibusdam libero asperiores ducimus rem delectus unde iure, esse quidem, consequatur exercitationem ab consectetur.</p>
+    
+</body>
+</html>
